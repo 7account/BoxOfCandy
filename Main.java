@@ -2,6 +2,7 @@ public class Main
 {
     public static void main(String[] args)
     {
+        //(a)
         Candy[][] box = new Candy[4][3];
         box[0][1] = new Candy("lime");
         box[1][1] = new Candy("orange");
@@ -16,6 +17,7 @@ public class Main
         System.out.println(b);
         System.out.println(b.moveCandyToFirstRow(2));
         System.out.println(b);
+        //(b)
         box = new Candy[3][5];
         box[0][0] = new Candy("lime");
         box[0][1] = new Candy("lime");
@@ -27,6 +29,12 @@ public class Main
         box[2][2] = new Candy("lemon");
         box[0][4] = new Candy("orange");
         BoxOfCandy a = new BoxOfCandy(box);
+        System.out.println(a);
+        System.out.println(a.removeNextByFlavor("cherry"));
+        System.out.println(a);
+        System.out.println(a.removeNextByFlavor("lime"));
+        System.out.println(a);
+        System.out.println(a.removeNextByFlavor("grape"));
         System.out.println(a);
     }
 }
